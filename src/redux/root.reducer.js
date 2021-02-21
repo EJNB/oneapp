@@ -1,9 +1,7 @@
 import { combineReducers } from "redux";
 
-// Aca tendria mis reducers asi como account reducers
+import userReducer from "./user/user.reducer";
 
-const rootReducer = combineReducers({
-  // reducers.
+export default combineReducers({
+  user: userReducer,
 });
-
-export default rootReducer;
